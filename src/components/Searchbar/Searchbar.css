@@ -1,0 +1,78 @@
+.Searchbar {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  background-color: #3f51b5;
+  box-shadow:
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.SearchForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.SearchForm-button {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KPHBhdGggZD0iTTI3LjY2IDM3Ljc4Yy01LjYyIDAtMTAuMjEtNC41OC0xMC4yMS0xMC4yMXM0LjU4LTEwLjIxIDEwLjIxLTEwLjIxIDEwLjIxIDQuNTggMTAuMjEgMTAuMjEtNC41OCAxMC4yMS0xMC4yMSAxMC4yMXptMCAzLjgxYzcuNzUgMCAxNC4wMi02LjI3IDE0LjAyLTE0LjAyUzM1LjQxIDkuNTUgMjcuNjYgOS41NSAxMy42NCAxNS44MiAxMy42NCAyMy41NCAyMC41MSAzNy4yIDguNzUgNDUuOTkgOC43NSA0NiA5LjUzIDQ2LjA1bDguMTYgOC4xNmMtLjE5LjQtLjM1LjktLjM1IDEuNCAwIDEuNjEuMTUgMy4xNi4zOSA0LjYzTDMwIDQ3Ljc2Yy0xLjQ3LS4yNC0zLjAyLS4zOS00LjYzLS4zOS0uNTEgMC0xLjEtLjE2LTEuNS0uMzVsLTguMTUgOC4xNmMwIC4wMSAwLS4wMS0uMDEtLjAxem0wIDAiIGZpbGw9IiMwMDAiLz4KPC9zdmc+");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.SearchForm-button:hover {
+  opacity: 1;
+}
+
+.SearchForm-button-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.SearchForm-input {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.SearchForm-input::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
